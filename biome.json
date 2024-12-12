@@ -4,14 +4,7 @@
     "enabled": true
   },
   "files": {
-    "ignore": [
-      "node_modules",
-      "functions",
-      ".git",
-      ".github",
-      ".cache",
-      "public"
-    ]
+    "ignore": ["node_modules", "functions", ".git", ".github", ".cache", "public"]
   },
   "linter": {
     "enabled": true,
