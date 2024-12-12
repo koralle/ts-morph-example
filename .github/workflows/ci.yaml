@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Setup
+        uses: ./.github/composite-actions/cache-and-install
+
+      - name: CI
+        shell: bash
+        run: |
+          pnpm run check

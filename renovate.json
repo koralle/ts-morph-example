@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    ":separateMultipleMajorReleases",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    "schedule:daily"
+  ],
+  "assignees": ["koralle"],
+  "timezone": "Asia/Tokyo",
+  "labels": ["dependencies"],
+  "reviewers": ["koralle"],
+  "platformCommit": true,
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": false,
+    "assignees": ["koralle"]
+  },
+  "branchPrefix": "renovate/",
+  "major": { "labels": ["renovate", "update_major"] },
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted"
+}
