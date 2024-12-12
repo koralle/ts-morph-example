@@ -2,8 +2,9 @@
   "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "lib": ["esnext"],
-    "module": "esnext",
+    "module": "preserve",
     "target": "es2022",
     "moduleResolution": "bundler"
   },
+  "include": ["src/**/*.ts"]
 }
