@@ -8,7 +8,8 @@
   "scripts": {
     "fmt": "biome format src/* --write",
     "typecheck": "tsc --noEmit",
-    "check": "biome check src/*"
+    "check": "biome check src/*",
+    "dev": "tsx src/index.ts"
   },
   "keywords": [],
   "author": "koralle",
